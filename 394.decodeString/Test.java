@@ -5,7 +5,7 @@ class Test {
     int ptr;
     public static void main(String[] args) {
         Test t = new Test();
-        System.out.print(t.decodeString("2[ab4[c]]"));
+        System.out.print(t.decodeString("3[a2[c]]"));
     }
     public String decodeString(String s) {
         LinkedList<String> stk = new LinkedList<String>();

@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.LinkedList;
 
 class Solution{
@@ -14,11 +15,22 @@ class Solution{
                 stk.addLast(String.valueOf(s.charAt(ptr++)));
             }else{
                 ++ptr;
-                
-            }
-            System.out.println(stk);
+                LinkedList<String> sub = new LinkedList<String>();
+                while( !"[".equals(stk.peekLast())){
+                    sub.addLast(stk.removeLast());
+                };
+                Collections.reverse(sub);
+                stk.removeLast();
+                int repTime = Integer.parseInt(stk.removeLast());
+                StringBuffer ret = new StringBuffer();
+                String o = getString(sub);
+                while( repTime-- > 0  ){
+                    ret.append(o);
+                };
+                stk.addLast(ret.toString());
+            };
         }
-        return "sad";
+        return getString(stk);
     }
     public String getDigit(String s){
         StringBuffer ret = new StringBuffer();
@@ -27,8 +39,16 @@ class Solution{
         }
         return ret.toString();
     }
+    public String getString(LinkedList<String> v){
+        StringBuffer ret = new StringBuffer();
+        for( String s : v ){
+            ret.append(s);
+        }
+        return ret.toString();
+    }
     public static void main(String[] args) {
         Solution s = new Solution();
-        s.decodeString("3[a]2[bc]");
+        String str =  s.decodeString("3[a]2[bc]");
+        System.out.print(str);
     }
 }

@@ -6,29 +6,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "leet-code-for-daily_2b2170e1"
-        },
-        {
-            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "Solution",
-            "projectName": "leet-code-for-daily_2b2170e1"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch) - Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Mmp<leet-code-for-daily_2b2170e1>",
-            "request": "launch",
-            "mainClass": "Mmp",
             "projectName": "leet-code-for-daily_2b2170e1"
         }
     ]

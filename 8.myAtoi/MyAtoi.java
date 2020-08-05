@@ -15,14 +15,13 @@ class MyAtoi {
         System.out.print(sign);
         int pointer = Character.isDigit(str.charAt(0)) ? 0 : 1;
         while( pointer < str.length() && Character.isDigit(str.charAt(pointer)) ){
-            int tmpCopy = sign ? Integer.MIN_VALUE : Integer.MAX_VALUE;
-            int tmp = (tmpCopy + (str.charAt(pointer) - '0'))/10;
+            int tmp = (( sign ? Integer.MIN_VALUE : Integer.MAX_VALUE ) + ( str.charAt(pointer) - '0' ) ) / 10;
             if( ans < tmp ){
                 return sign ? Integer.MIN_VALUE : Integer.MAX_VALUE; 
             }
-            ans = ans * 10 + (str.charAt(pointer++) - '0');
+            ans = ans * 10 - (str.charAt(pointer++) - '0');
         }
-        return sign ? (int)-ans : (int)ans;
+        return sign ? (int)ans : (int)-ans;
     }
 
     public static void main(String[] args) {

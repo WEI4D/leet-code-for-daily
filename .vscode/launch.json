@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MaxArea",
+            "request": "launch",
+            "mainClass": "MaxArea",
+            "projectName": "leet-code-for-daily_2b2170e1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - IsPalindrome",
             "request": "launch",
             "mainClass": "IsPalindrome",

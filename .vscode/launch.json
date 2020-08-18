@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SingleNumber",
+            "request": "launch",
+            "mainClass": "SingleNumber",
+            "projectName": "leet-code-for-daily_2b2170e1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ContainsDuplicate",
+            "request": "launch",
+            "mainClass": "ContainsDuplicate",
+            "projectName": "leet-code-for-daily_2b2170e1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Rotate",
             "request": "launch",
             "mainClass": "Rotate",

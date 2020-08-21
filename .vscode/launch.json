@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PlusOne",
+            "request": "launch",
+            "mainClass": "PlusOne",
+            "projectName": "leet-code-for-daily_2b2170e1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SingleNumber",
             "request": "launch",
             "mainClass": "SingleNumber",
